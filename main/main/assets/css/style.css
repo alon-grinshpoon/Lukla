@@ -843,6 +843,9 @@ section.description {
   color: #00A7DD;
   font-size: inherit;
 }
+.description-list bullet {
+  font-size: 16px;
+}
 
 
 /*
