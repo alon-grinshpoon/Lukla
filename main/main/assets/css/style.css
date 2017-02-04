@@ -804,6 +804,9 @@ h3 {
   font-weight: 700;
   color: #fff;
 }
+.feature h2 {
+  font-size: 35px;
+}
 .feature p {
   font-size: 14px;
   color: #fff;
