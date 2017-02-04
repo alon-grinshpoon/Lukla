@@ -1273,6 +1273,9 @@ section.video {
   text-transform: capitalize;
   margin-bottom: 15px;
 } 
+.support-block desc{
+  font-size: 10px;
+}
 .support-block .support-icon {
   position: absolute;
   top: -31px;
