@@ -1,7 +1,7 @@
 body {
-	margin-top: 60px;
+	margin-top: 50px;
 	font-size: 14px;
-	font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
+	font-family: 'Roboto';
 	background-color: #0070C0;
 }
 .btn:hover,
@@ -11,11 +11,11 @@ body {
 }
 /* entire container, keeps perspective */
 .card-container {
-	  -webkit-perspective: 800px;
-   -moz-perspective: 800px;
-     -o-perspective: 800px;
-        perspective: 800px;
-        margin-bottom: 30px;
+	  -webkit-perspective: 400px;
+   -moz-perspective: 400px;
+     -o-perspective: 400px;
+        perspective: 400px;
+        margin-bottom: 10px;
 }
 /* flip the pane when hovered */
 .card-container:not(.manual-flip):hover .card,
@@ -25,7 +25,6 @@ body {
  -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
 }
-
 
 .card-container.static:hover .card,
 .card-container.static.hover .card {
@@ -89,11 +88,11 @@ body {
 }
 .card-container, .front, .back {
 	width: 100%;
-	height: 420px;
+	height: 220px;
 	border-radius: 4px;
 }
 .card .cover{
-    height: 105px;
+    height: 85px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
 }
@@ -117,13 +116,13 @@ body {
 .card .content{
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
-    padding: 10px 20px 20px;
+    padding: 0px 20px 20px 20px;
 }
 .card .content .main {
-    min-height: 160px;
+    height: 0px;
 }
 .card .back .content .main {
-    height: 215px;
+    height: 30px;
 }
 .card .name {
     font-size: 22px;
@@ -198,7 +197,7 @@ body {
 /*      Just for presentation        */
 
 .title{
-    color: #506A85;
+    color: #ffffff;
     text-align: center;
     font-weight: 300;
     font-size: 44px;
@@ -317,3 +316,8 @@ body {
         visibility: visible;
     }
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Light.ttf');
+}
+
