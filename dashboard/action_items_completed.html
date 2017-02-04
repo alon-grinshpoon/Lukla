@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/v.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Lukla</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<!-- Modals -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Company Incorporation</h4>
+      </div>
+      <div class="modal-body">
+          <iframe src="form2.html" width="580" height="380" frameborder="0" allowtransparency="true"></iframe>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning btn-fill" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success btn-fill pull-left" data-dismiss="modal">Customize for $4</button>
+        <a href="#" onclick="location.reload();location.href='lawyers.html';
+            window.open('file2.pdf');">
+            <button type="button" class="btn btn-danger btn-fill">I'm Done</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+	<!-- Sidebar Attributes -->
+    <div class="sidebar" data-color="azure" data-image="assets/img/sidebar-4.jpg">
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+					<a href="index.html"><img border="0" src="assets/img/logo.png" width="206" height="86"></a>
+            </div>
+
+            <ul class="nav">
+			    <li class="active">
+                    <a href="action_items.html">
+                        <i class="pe-7s-hammer"></i>
+                        <p>Action Items</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="pe-7s-graph"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+				<li>
+                    <a href="dataroom.html">
+                        <i class="pe-7s-note2"></i>
+                        <p>Data Room</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="pe-7s-network"></i>
+                        <p>Company Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="lawyers.html">
+                        <i class="pe-7s-id"></i>
+                        <p>Legal Counsel</p>
+                    </a>
+                </li>
+				<li class="active-pro">
+                    <a href="upgrade.html">
+                        <i class="pe-7s-rocket"></i>
+                        <p>Upgrade to PRO</p>
+                    </a>
+                </li>
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+						<li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-envelope"></i>
+                                    <b class="caret"></b>
+                                    <span class="notification">1</span>
+                              </a>
+                              <ul class="dropdown-menu">
+								<li>
+									<a href="#"><b>Connor Green, Adv.</b>: Hey! I recieved your...</a>
+								</li>
+                              </ul>
+                        </li>
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-globe"></i>
+                                    <b class="caret"></b>
+                                    <span class="notification">5</span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#"><b>NEW</b> Founders' Agreement available.</a></li>
+                                <li><a href="#"><b>NEW</b> Lawyer request approved.</a></li>
+                                <li><a href="#"><b>NOTICE</b> Document uploaded.</a></li>
+                                <li><a href="#"><b>CRITICAL</b> COI missing!</a></li>
+                                <li><a href="#"><b>NOTICE</b> Update your payment method.</a></li>
+                              </ul>
+                        </li>
+                        <li>
+                           <a href="">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Settings
+                                    <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Edit User Profile</a></li>
+								<li><a href="#">Email Preferences</a></li>
+                                <li><a href="#">Add Payment Method</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Share Feedback</a></li>
+                              </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <p class="text-success">Step 1</p>
+                                <h4 class="title">Sign a <b>Founders Agreement</b></h4>
+                                <p class="category">This agreement governs the relations between the Founders during the pre-incorporation stage of your business.This template will allow you to collaborate on fair and standart terms, without a lot of hassle or paperwork.
+                                <a href="#">continue reading...</a></p>
+                            </div>
+                            <div class="content">
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> DIY
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn-fill pull-right">COMPLETED</button>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i> Only execute once all founders are committied to your business.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <p class="text-success">Step 2</p>
+                                <h4 class="title">Incorporate your <b> Company</b></h4>
+                                <p class="category">The process of legally declaring a corporate entity separate from its owners.
+                                <a href="#">continue reading...</a></p>
+                            </div>
+                            <div class="content">
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> DIY
+                                        <i class="fa fa-circle text-danger"></i> Lawyer Required 
+                                        <i class="fa fa-circle text-warning"></i> Payment Required
+                                        <i class="fa fa-circle text-success"></i> Physical Action
+                                    </div>
+                                    <button type="submit" class="btn btn-danger btn-fill pull-right"  data-toggle="modal" data-target="#myModal">Do It Now</button>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i> Incorporate a company only once the need arises.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <p class="text-success">Step 3</p>
+                                <h4 class="title"> Generate a <b>Shareholders Register</b></h4>
+                                <p class="category">A list of all current owners of a company's shares, updated on an ongoing basis. 
+                                <a href="#">continue reading...</a></p>
+                            </div>
+                            <div class="content">
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> DIY
+                                    </div>
+                                    <button type="submit" class="btn btn-danger btn-fill pull-right">Do It Now</button>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i> Remember to update the register once new shareholders join. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <p class="text-success">Step 4</p>
+                                <h4 class="title">Generate a <b>Directors Register</b></h4>
+                                <p class="category">A list of the directors appointed to the Company's board. 
+                                <a href="#">continue reading...</a></p>
+                            </div>
+                            <div class="content">
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> DIY
+                                    </div>
+                                    <button type="submit" class="btn btn-danger btn-fill pull-right">Do It Now</button>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i> Remember to update the register once new directors are appointed or resign . 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <p class="text-success">Step 5</p>
+                                <h4 class="title">Sign an <b> Assignment of IP, Waiver and Undertaking</b></h4>
+                                <p class="category">Assign the Company all rights and title to the intellectual property conceived  prior to the inception of the Company and any future rights with respect to intellectual property created during you engagement with the Company.
+                                <a href="#">continue reading...</a></p>
+                            </div>
+                            <div class="content">
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> DIY
+                                    </div>
+                                    <button type="submit" class="btn btn-danger btn-fill pull-right">Do It Now</button>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i> Sign this Undertaking immediately following the incorporation of the Company.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <p class="text-success">Step 6</p>
+                                <h4 class="title">Setup a <b>Bank Account</b></h4>
+                                <p class="category">Fill out all the required forms in order to open a bank account on behalf of the Company as well as establish the Company's signature rights.
+                                <a href="#">continue reading...</a></p>
+                            </div>
+                            <div class="content">
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> DIY
+                                        <i class="fa fa-circle text-danger"></i> Lawyer Required 
+                                        <i class="fa fa-circle text-warning"></i> Payment Required
+                                        <i class="fa fa-circle text-success"></i> Physical Action
+                                    </div>
+                                    <button type="submit" class="btn btn-danger btn-fill pull-right">Do It Now</button>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i>  Open a bank account only once the need arises.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@lukla.com?Subject=Guide%20Me">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; 2016 <a href="#">Lukla</a>,  for a founder starting the climb.
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
+
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="assets/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="assets/js/light-bootstrap-dashboard.js"></script>
+
+	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
+
+	<script type="text/javascript">
+    	$(document).ready(function(){
+
+        	demo.initChartist();
+
+    	});
+	</script>
+
+</html>
