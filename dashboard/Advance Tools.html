@@ -31,6 +31,29 @@
 </head>
 <body>
 
+<!-- Modals -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Founders Agreement</h4>
+      </div>
+      <div class="modal-body">
+          <iframe src="form1.html" width="580" height="380" frameborder="0" allowtransparency="true"></iframe>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning btn-fill" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success btn-fill pull-left" data-dismiss="modal">Customize for $4</button>
+        <a href="#" onclick="location.reload();location.href='action_items.html';
+            window.open('file1.pdf');">
+            <button type="button" class="btn btn-info btn-fill">I'm Done</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="wrapper">
 	<!-- Sidebar Attributes -->
     <div class="sidebar" data-color="azure" data-image="assets/img/sidebar-4.jpg">
@@ -65,14 +88,15 @@
                         <p>Company Profile</p>
                     </a>
                 </li>
-<li>
+		<li class="active">
                     <a href="Advance Tools.html">
                         <i class="pe-7s-diamond"></i>
                         <p>Advance Tools</p>
                     </a>
                 </li>
 		<li>                
-<li>
+
+		<li>
                     <a href="lawyers.html">
                         <i class="pe-7s-id"></i>
                         <p>Legal Counsel</p>
@@ -159,73 +183,129 @@
         </nav>
 
 
-        
-        <!-- Content goes here -->
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="card">
-                            <div class="header text-center">
-                                <h4 class="title">Plans & Subscriptions</h4>
-                                <p class="category">Looking for more legal solutions? Please check our Premium Version.</p>
-                                <br>
-                            </div>
-                            <div class="content table-responsive table-full-width table-upgrade">
-                                <table class="table">
-                                    <thead>
-                                        <th></th>
-                                        <th class="text-center">Free</th>
-                                        <th class="text-center">Pro</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Standard Contracts</td>
-                                            <td>Free</td>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Customized Contracts</td>
-                                            <td>$4 per edit</td>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Legal Consult</td>
-                                            <td>Lawyer Dependent</td>
-                                            <td>3 Consults / Month</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Premium Support</td>
-                                            <td><i class="fa fa-times text-danger"></i></td>
-                                            <td><i class="fa fa-check text-success"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Professional Services</td>
-                                            <td><i class="fa fa-times text-danger"></i></td>
-                                            <td><i class="fa fa-check text-success"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>Free</td>
-                                            <td>Just $49</td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>
-                                                <a href="#" class="btn btn-round btn-fill btn-default disabled">Current Version</a>
-                                            </td>
-                                            <td>
-                                                <a target="_blank" href="mailto:pro@lukla.com?Subject=Upgrade%20Me" class="btn btn-round btn-fill btn-info">Upgrade to Pro</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
 
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <p class="text-success"></p>
+                                <h4 class="title"><b>DocuSign</b></h4>
+                                <p class="category">An electronic signature technology and digital transaction management service facilitating electronic exchanges of contracts and signed documents.
+                                <a href="#">continue reading...</a></p>
+                            </div>
+                            <div class="content">
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> DIY
+                                    </div>
+
+<i class="fa fa-circle text-warning"></i> Payment Required
+                                   
+<a href="https://www.docusign.com/"><button type="submit" class="btn btn-info btn-fill pull-right"  data-toggle="modal" data-target="#myModal">Get It Now</button></a>
+                                    
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <p class="text-success"></p>
+                                <h4 class="title"><b> eShares</b></h4>
+                                <p class="category">An online platform for private companies that allows companies, from seed stage to pre-IPO, to manage equity electronically with the participation of their shareholders, employees, auditors, and legal counsel.
+                                <a href="#">continue reading...</a></p>
+                            </div>
+                            <div class="content">
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> DIY
+                                        <i class="fa fa-circle text-danger"></i> Lawyer Required 
+                                        <i class="fa fa-circle text-warning"></i> Payment Required
+                                       
+                                    </div>
+                                    <a href="
+https://esharesinc.com/about"><button type="submit" class="btn btn-info btn-fill pull-right">Get It Now</button></a>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <p class="text-success"></p>
+                                <h4 class="title"> <b>Capital Calculator</b></h4>
+                                <p class="category">Calculate the dilution you will experience when taking outside funding. Determine the payout in various sale of the business scenarios. 
+                                <a href="#">continue reading...</a></p>
+                            </div>
+                            <div class="content">
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> DIY
+                                    </div>
+                                    <a href="http://www.foundersworkbench.com/capital-calculator/"><button type="submit" class="btn btn-info btn-fill pull-right"> Get It Now</button></a>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <p class="text-success"></p>
+                                <h4 class="title"><b>Deal Glossary</b></h4>
+                                <p class="category">Designed to help you understand the jargon that comes up in discussions with investors and legal counsel. 
+                                <a href="#">continue reading...</a></p>
+                            </div>
+                            <div class="content">
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> DIY
+                                    </div>
+                                    <a href="http://www.foundersworkbench.com/deal-dictionary/"><button type="submit" class="btn btn-info btn-fill pull-right">Get It Now</button></a>
+                                    
+                                                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <p class="text-success"></p>
+                                <h4 class="title"><b> Franchise Tax Calculator</b></h4>
+                                <p class="category">The Delawere franchise tax calculator.
+                                <a href="#">continue reading...</a></p>
+                            </div>
+                            <div class="content">
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> DIY
+                                    </div>
+                                   <a href="https://corp.delaware.gov/taxcalc2003.xls"> <button type="submit" class="btn btn-info btn-fill pull-right">Get It Now</button></a>
+                                
+                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -240,7 +320,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:contact@Lukla.com?Subject=Guide%20Me">
+                            <a href="mailto:contact@lukla.com?Subject=Guide%20Me">
                                 Contact
                             </a>
                         </li>
@@ -252,7 +332,7 @@
                     </ul>
                 </nav>
                 <p class="copyright pull-right">
-                    &copy; 2017 <a href="#">Lukla</a>, for a founder starting the climb.
+                    &copy; 2016 <a href="#">Lukla</a>, for a founder starting the climb.
                 </p>
             </div>
         </footer>
@@ -289,6 +369,14 @@
     	$(document).ready(function(){
 
         	demo.initChartist();
+            $.notify({
+                icon: 'pe-7s-info',
+                message: "Welcome! <b>Lukla</b> will help you climb."
+
+            },{
+                type: 'info',
+                timer: 4000
+            });
 
     	});
 	</script>
